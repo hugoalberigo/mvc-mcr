@@ -1,0 +1,32 @@
+<html>
+    <%- include("../partials/head") %>
+    <body>
+        <%- include("../partials/navbar") %>
+        <div class="container m-4">
+            <h1><%= title %></h1>
+            <h2>Hi! <%= userData.name %></h2>
+            <p><%= subTitle %></p>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered" id="sort-table">
+                        <tr>
+                            <th class="th-sm">No</th>
+                            <th class="th-sm">User ID</th>
+                            <th class="th-sm">Username</th>
+                            <th class="th-sm">Score</th>
+                        </tr>
+                        <% user_game_history.forEach(i => { %>
+                            <tr>
+                                <td><%= i.id %></td>
+                                <td><%= i.user_id %></td>
+                                <td><%= i.username %></td>
+                                <td><%= i.score %></td>
+                            </tr>
+                        <% }) %>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <%- include("../partials/script") %>
+    </body>
+</html>

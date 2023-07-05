@@ -1,0 +1,80 @@
+<html>
+    <%- include("../partials/head") %>
+    <body>
+        <%- include("../partials/navbar") %>
+        <div class="container m-4">
+            <h1><%= subTitle %></h1>
+        </div>
+        <div class="container" style="margin-top: 50px;">
+            <div class="row">
+                <div class="col-md-4 container" style="display: grid; grid-template-columns: auto; grid-template-rows: 40% auto;">
+                    <img src="/images/photo.png" id="photo">
+                    <div>
+                        <h5>Nama : Hugo Alberigo Ernanto</h5>
+                        <h5>Alamat : Jombang</h5>
+                        <h5>Tempat Tanggal Lahir : 25-03-1994</h5>
+                        <h5>Email : hugoalberigo@gmail.com</h5>
+                    </div>
+                </div>
+                <div class="col-md-8" id="profile">
+                    <h4>Education :</h4>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Tahun</th>
+                            <th>Sekolah/Universitas</th>
+                            <th>Jurusan</th>
+                        </tr>
+                        <tr>
+                            <td>2009-2012</td>
+                            <td>SMA Negeri 2 Jombang</td>
+                            <td>IPA</td>
+                        </tr>
+                        <tr>
+                            <td>2012-2017</td>
+                            <td>Institut Negeri Sepuluh Nopember</td>
+                            <td>Teknik Fisika</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <h4>Job Experience :</h4>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Tahun</th>
+                            <th>Perusahaan</th>
+                            <th>Bagian</th>
+                        </tr>
+                        <tr>
+                            <td>2019-2022</td>
+                            <td>PT. Manunggal Cipta Mandiri</td>
+                            <td>Admin Keuangan</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <h4>Portfolio :</h4>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Project</th>
+                            <th>Deskripsi</th>
+                        </tr>
+                        <tr>
+                            <td>HTML CSS Mockup</td>
+                            <td>Project ini menggunakan framework CSS Bootstrap dan HTML5. Dibuat untuk memenuhi penilaian challenge di Binar Academy kelas Fullstack Web Development Chapter 3.</td>
+                        </tr>
+                        <tr>
+                            <td>Rock Paper Scissors Game</td>
+                            <td>Project ini menggunakan framework CSS Bootstrap, HTML5 dan JavaScript. Dibuat untuk memenuhi penilaian challenge di Binar Academy kelas Fullstack Web Development Chapter 4.</td>
+                        </tr>
+                        <tr>
+                            <td>Web restfull API</td>
+                            <td>Project ini menggunakan framework ExpressJS. Dibuat untuk memenuhi penilaian challenge di Binar Academy kelas Fullstack Web Development Chapter 5.</td>
+                        </tr>
+                        <tr>
+                            <td>Database for monolith dashboard</td>
+                            <td>Project ini menggunakan framework ExpressJS dan PostgreSQL. Dibuat untuk memenuhi penilaian challenge di Binar Academy kelas Fullstack Web Development Chapter 6.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <%- include("../partials/head") %>
+    <body>
+        <div class="container">
+            <div class="row">
+                <form method="post" action="/auth/login">
+                    <h1>Login</h1>
+                    <p style="margin-top: 30px;">Please fill in this form to login (admin only).</p>
+                    <hr>
+                    <div class="from-outline mb-4">
+                        <input type="text" name="username" class="form-control">
+                        <label class="form-label">Username</label>
+                    </div>
+                    <div class="from-outline mb-4">
+                        <input type="password" name="password" class="form-control">
+                        <label class="form-label">Password</label>
+                    </div>
+                    <% if (messages.error) { %>
+                        <h5><%= messages.error %></h5>
+                    <% } %>
+                    <input type="submit" class="btn btn-primary btn-block" value="Log In">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#photo {
+  height: 80%;
+  border-radius: 50%;
+  justify-self: center;
+}
+
+#profile {
+  border-left: 4px solid blue;
+  height: 90%;
+}
